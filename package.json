@@ -1,0 +1,21 @@
+{
+  "name": "syntax-highlighting",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run watch",
+    "build": "esbuild src/main.js --bundle --format=cjs --outfile=main.js",
+    "watch": "esbuild src/main.js --bundle --format=cjs --outfile=main.js --watch",
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.10"
+  },
+  "dependencies": {
+    "@impro.social/impro-plugin": "^0.0.9",
+    "lowlight": "^3.3.0"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

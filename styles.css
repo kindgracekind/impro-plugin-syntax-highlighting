@@ -1,0 +1,90 @@
+.code-highlight-inline {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  background: color-mix(in srgb, var(--text-color) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+  border-radius: 4px;
+  padding: 1px 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.code-highlight-fence {
+  margin: 6px 0;
+  padding: 10px 12px;
+  background: color-mix(in srgb, var(--text-color) 5%, transparent);
+  border: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.code-highlight-fence-code {
+  display: block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.code-highlight-line {
+  white-space: pre;
+}
+
+.code-highlight-line:empty::before {
+  content: "\a0";
+}
+
+/* Syntax theme: light-dark() tracks the app's color-scheme setting. */
+.ch-keyword,
+.ch-literal,
+.ch-selector-tag,
+.ch-built_in,
+.ch-doctag {
+  color: light-dark(#a626a4, #c678dd);
+}
+
+.ch-string,
+.ch-regexp,
+.ch-addition,
+.ch-attribute,
+.ch-meta-string {
+  color: light-dark(#50a14f, #98c379);
+}
+
+.ch-number,
+.ch-symbol,
+.ch-bullet,
+.ch-link,
+.ch-variable,
+.ch-template-variable {
+  color: light-dark(#986801, #d19a66);
+}
+
+.ch-title,
+.ch-section,
+.ch-name,
+.ch-selector-id,
+.ch-selector-class {
+  color: light-dark(#4078f2, #61afef);
+}
+
+.ch-attr,
+.ch-params,
+.ch-type {
+  color: light-dark(#c18401, #e5c07b);
+}
+
+.ch-comment,
+.ch-quote,
+.ch-deletion,
+.ch-meta {
+  color: light-dark(#a0a1a7, #7f848e);
+  font-style: italic;
+}
+
+.ch-emphasis {
+  font-style: italic;
+}
+
+.ch-strong {
+  font-weight: bold;
+}

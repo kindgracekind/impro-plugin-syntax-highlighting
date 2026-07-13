@@ -1,0 +1,7 @@
+{
+  "id": "syntax-highlighting",
+  "name": "Syntax Highlighting",
+  "version": "0.1.0",
+  "author": "kindgracekind",
+  "description": "Renders Markdown-style inline code and fenced code blocks in posts"
+}
